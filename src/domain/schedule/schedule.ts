@@ -5,9 +5,16 @@ import {
   type Booking,
   type IsoDate,
   type TimeOfDay,
-} from './booking'
-import { compareByTime, isBookingEditable } from './rules'
-import { ceilToStep, fromMinutes, isPastDate, isToday, minutesOfDay, toMinutes } from './time'
+} from '@/domain/booking'
+import { compareByTime, isBookingEditable } from '@/domain/rules'
+import {
+  ceilToStep,
+  fromMinutes,
+  isPastDate,
+  isToday,
+  minutesOfDay,
+  toMinutes,
+} from '@/domain/time'
 
 export type ScheduleItem =
   | { kind: 'booking'; booking: Booking; isPast: boolean }

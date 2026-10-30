@@ -31,16 +31,25 @@ import {
   getInitialValues,
   parseDateValue,
   parseTimeValue,
-} from '../bookingForm'
-import { bookingKeys, useBookings, useCreateBooking, useUpdateBooking } from '../queries'
+} from '@/features/bookings/bookingForm'
+import {
+  bookingKeys,
+  useBookings,
+  useCreateBooking,
+  useUpdateBooking,
+} from '@/features/bookings/queries'
 import {
   bookingFormResolver,
   toBookingInput,
   type BookingFormContext,
   type BookingFormField,
   type BookingFormValues,
-} from '../schema'
-import { CONFLICT_FIELD_MESSAGE, describeSaveError, type SaveErrorView } from '../serverErrors'
+} from '@/features/bookings/schema'
+import {
+  CONFLICT_FIELD_MESSAGE,
+  describeSaveError,
+  type SaveErrorView,
+} from '@/features/bookings/serverErrors'
 
 export type BookingFormDialogProps = {
   open: boolean

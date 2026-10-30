@@ -1,7 +1,7 @@
 import { isApiError, isConflictError, isNotFoundError, isValidationError } from '@/api/errors'
 import type { Booking } from '@/domain/booking'
 import { formatTimeRange } from '@/domain/time'
-import { toFieldErrors, type BookingFieldErrors } from './schema'
+import { toFieldErrors, type BookingFieldErrors } from '@/features/bookings/schema'
 
 /** What the booking form should show for a failed save. */
 export type SaveErrorView =

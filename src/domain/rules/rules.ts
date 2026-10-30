@@ -8,7 +8,7 @@ import {
   type BookingInput,
   type IsoDate,
   type TimeRange,
-} from './booking'
+} from '@/domain/booking'
 import {
   formatTimeRange,
   isPastDate,
@@ -17,7 +17,7 @@ import {
   isValidTimeOfDay,
   minutesOfDay,
   toMinutes,
-} from './time'
+} from '@/domain/time'
 
 // Single source of truth for business rules: used by the form (client) and by the mock server.
 

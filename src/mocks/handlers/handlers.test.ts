@@ -1,6 +1,6 @@
 import type { Booking } from '@/domain/booking'
 import { overlaps } from '@/domain/rules'
-import { db, devSettings } from './server'
+import { db, devSettings } from '@/mocks/server'
 
 const DATE = '2099-01-15'
 

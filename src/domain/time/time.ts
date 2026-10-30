@@ -1,4 +1,4 @@
-import type { IsoDate, TimeOfDay, TimeRange } from './booking'
+import type { IsoDate, TimeOfDay, TimeRange } from '@/domain/booking'
 
 // All functions work in the browser's local time zone; `now` is always injected for testability.
 

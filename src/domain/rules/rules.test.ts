@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Booking, BookingInput } from './booking'
-import { TITLE_MAX_LENGTH } from './booking'
+import type { Booking, BookingInput } from '@/domain/booking'
+import { TITLE_MAX_LENGTH } from '@/domain/booking'
 import {
   canCreateOnDate,
   findConflict,
@@ -10,7 +10,7 @@ import {
   validateBooking,
   VALIDATION_MESSAGES,
   type ValidationIssue,
-} from './rules'
+} from '@/domain/rules'
 
 // Local-time constructor: timezone-independent. "Now" is 2026-10-27 12:07.
 const NOW = new Date(2026, 9, 27, 12, 7)

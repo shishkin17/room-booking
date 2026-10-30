@@ -9,8 +9,8 @@ import DialogTitle from '@mui/material/DialogTitle'
 import { isNotFoundError } from '@/api/errors'
 import type { Booking } from '@/domain/booking'
 import { formatTimeRange } from '@/domain/time'
-import { useDeleteBooking } from '../queries'
-import { describeDeleteError } from '../serverErrors'
+import { useDeleteBooking } from '@/features/bookings/queries'
+import { describeDeleteError } from '@/features/bookings/serverErrors'
 
 export type DeleteBookingDialogProps = {
   /** Booking to delete; dialog is open while it is set. */

@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { QueryClient } from '@tanstack/react-query'
 import { db, devSettings } from '@/mocks/server'
 import { App } from './App'
-import { Providers } from './providers'
+import { Providers } from '@/app/providers'
 
 const DATE = '2026-10-27'
 

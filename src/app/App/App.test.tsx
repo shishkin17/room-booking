@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { App } from './App'
-import { Providers, createQueryClient } from './providers'
+import { Providers, createQueryClient } from '@/app/providers'
 
 describe('App', () => {
   it('renders the heading and the empty day', async () => {

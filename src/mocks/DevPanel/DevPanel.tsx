@@ -15,7 +15,7 @@ import Switch from '@mui/material/Switch'
 import Typography from '@mui/material/Typography'
 import { useQueryClient } from '@tanstack/react-query'
 import { bookingKeys } from '@/features/bookings/queries'
-import { db, devSettings } from './browser'
+import { db, devSettings } from '@/mocks/browser'
 
 const LATENCY_OPTIONS = [0, 400, 1500, 3000]
 

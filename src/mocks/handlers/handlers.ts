@@ -3,8 +3,8 @@ import type { ApiErrorBody } from '@/api/errors'
 import type { Booking, BookingInput, TimeRange } from '@/domain/booking'
 import { fromMinutes, isValidIsoDate, toMinutes } from '@/domain/time'
 import { isBookingEditable, validateBooking, type ValidationIssue } from '@/domain/rules'
-import type { BookingsDb } from './db'
-import type { DevSettingsStore } from './devSettings'
+import type { BookingsDb } from '@/mocks/db'
+import type { DevSettingsStore } from '@/mocks/devSettings'
 
 type Deps = { db: BookingsDb; settings: DevSettingsStore; now?: () => Date }
 

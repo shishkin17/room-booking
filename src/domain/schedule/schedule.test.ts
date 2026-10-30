@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { Booking } from './booking'
+import type { Booking } from '@/domain/booking'
 import { buildDaySchedule, type ScheduleItem } from './schedule'
 
 // Local-time constructor: timezone-independent. "Now" is 2026-10-27 12:07 (rounds up to 12:15).

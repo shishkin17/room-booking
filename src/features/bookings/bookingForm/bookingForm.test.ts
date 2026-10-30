@@ -9,7 +9,7 @@ import {
   parseTimeValue,
   suggestSlot,
 } from './bookingForm'
-import { INVALID_INPUT } from './schema'
+import { INVALID_INPUT } from '@/features/bookings/schema'
 
 const at = (hours: number, minutes = 0) => new Date(2026, 9, 27, hours, minutes)
 const TODAY = '2026-10-27'

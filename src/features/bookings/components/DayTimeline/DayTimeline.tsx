@@ -6,7 +6,7 @@ import dayjs from 'dayjs'
 import { MIN_DURATION_MINUTES, type Booking, type IsoDate, type TimeRange } from '@/domain/booking'
 import { buildDaySchedule } from '@/domain/schedule'
 import { durationMinutes, formatTimeRange, fromMinutes, toMinutes } from '@/domain/time'
-import { BookingCard } from './BookingCard'
+import { BookingCard } from '@/features/bookings/components/BookingCard'
 
 export type DayTimelineProps = {
   date: IsoDate

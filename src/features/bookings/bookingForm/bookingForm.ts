@@ -19,7 +19,7 @@ import {
   minutesOfDay,
   toMinutes,
 } from '@/domain/time'
-import { INVALID_INPUT, type BookingFormValues } from './schema'
+import { INVALID_INPUT, type BookingFormValues } from '@/features/bookings/schema'
 
 const DEFAULT_DURATION_MINUTES = 60
 
